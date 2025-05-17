@@ -25,7 +25,7 @@ export default function Rekomendasi() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Logic pencarian rekomendasi nanti di sini
-    alert('Fitur rekomendasi sedang dikembangkan!');
+    alert('End of the feature');
   };
 
   return (
@@ -48,14 +48,14 @@ export default function Rekomendasi() {
       </nav>
 
         {/* FORM REKOMENDASI */}
-    <section className="max-w-4xl mx-auto px-6 py-24">
+    <section className="max-w-xl mx-auto px-6 py-24">
       <h1 className="mb- text-2xl text-gray-800 font-semibold text-center mx-auto px-6 py-24">Apa yang ingin kamu inginkan?</h1>
         
         <form
             onSubmit={handleSubmit}
-            className="max-w-lg mx-auto grid grid-cols-2 gap-6"
+            className="max-w-3xl mx-auto grid grid-cols-2 gap-6"
         >
-            {/* 1 Dropdown Harga */}
+            {/* 1 Dropdown Harga POIN:3*/}
             <div className="mb-4">
                 <label htmlFor="harga" className="block mb-1 font-semibold">
                     Harga
@@ -74,7 +74,7 @@ export default function Rekomendasi() {
                 </select>
             </div>
 
-            {/* 2 Dropdown Jarak */}
+            {/* 2 Dropdown Jarak POIN:5*/}
             <div className="mb-4">
                 <label htmlFor="jarak" className="block mb-1 font-semibold whitespace-nowrap">
                     Jarak Tempuh per Pengisian
@@ -83,7 +83,7 @@ export default function Rekomendasi() {
                 name="jarak"
                 value={formData.jarak}
                 onChange={handleChange}
-                className="p-3 rounded border border-gray-500 min-w-[300px]"
+                className="p-3 rounded border border-gray-500 min-w-[250px]"
                 required
                 >
                 <option value="" disabled>Pilih Jarak</option>
@@ -95,7 +95,7 @@ export default function Rekomendasi() {
                 </select>
             </div>
 
-            {/* 3 Dropdown Kapasitas Baterai */}
+            {/* 3 Dropdown Kapasitas Baterai POIN:3 */}
             <div className="mb-4">
                 <label htmlFor="baterai" className="block mb-1 font-semibold">
                     Kapasitas Baterai
@@ -115,7 +115,7 @@ export default function Rekomendasi() {
                 </select>
             </div>
 
-            {/* 4 Dropdown Waktu Pengisian */}
+            {/* 4 Dropdown Waktu Pengisian POIN:5*/}
             <div className="mb-4">
                 <label htmlFor="waktu_pengisian" className="block mb-1 font-semibold whitespace-nowrap">
                     Berapa Lama Waktu Pengisian
@@ -124,19 +124,19 @@ export default function Rekomendasi() {
                 name="waktu_pengisian"
                 value={formData.waktu_pengisian}
                 onChange={handleChange}
-                className="p-3 rounded border border-gray-500 min-w-[300px]"
+                className="p-3 rounded border border-gray-500 min-w-[250px]"
                 required
                 >
                 <option value="" disabled>Pilih Waktu Pengisian</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">Sangat Cepat</option>
+                <option value="2">Cepat</option>
+                <option value="3">Menengah</option>
+                <option value="4">Lama</option>
+                <option value="5">Sangat Lama</option>
                 </select>
             </div>
 
-            {/* 5 Dropdown Daya Motor */}
+            {/* 5 Dropdown Daya Motor POIN:3*/}
             <div className="mb-4">
                 <label htmlFor="daya" className="block mb-1 font-semibold">
                     Daya Motor
@@ -149,11 +149,10 @@ export default function Rekomendasi() {
                 required
                 >
                 <option value="" disabled>Pilih Daya Motor</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">Rendah</option>
+                <option value="2">Menengah</option>
+                <option value="3">Tinggi</option>
+
                 </select>
             </div>
 

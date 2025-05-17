@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-//import { Button, Stack } from '@geist-ui/components'
+import { GeistProvider, CssBaseline } from '@geist-ui/core'
+import { Button, Page, Text } from '@geist-ui/core'
+
 
 //context: penggunaan <a> di dalam <Link> sudah deprecated, gunakan <Link> sebagai pengganti <a>
 //ada error saat logo navbar di pencet, "legacyBehavior" digunakan sementara.

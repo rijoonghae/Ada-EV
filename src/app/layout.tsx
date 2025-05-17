@@ -3,8 +3,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 
-import './globals.css';
-
 export const metadata = {
   title: 'Ada-EV',
   description: 'Aplikasi Rekomendasi Mobil Listrik',
